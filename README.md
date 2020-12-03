@@ -29,7 +29,7 @@ Folgende Variablen müssen angepasst werden, bevor das App Interface einsatzbere
 | APP_KEY  | Der Schlüssel der für die Datenbankverschlüsselung verwendet wird (liegt in secure/secret.php) |
 | ETRAX_BASE_PATH | Pfad (relativ zum _public_ Verzeichnis) zum eTrax \| rescue server webroot |
 | STATUS_UPDATE_URL | URL des BOS Interfaces |
-| SECURE_PATH | Relativer Pfad zum _secure_ Verzeichnis der eTrax \| rescue Installation |
+| SECURE_PATH | Pfad (relativ zum _public_ Verzeichnis) zum _secure_ Verzeichnis der eTrax \| rescue Installation |
 | TOKEN_MAX_AGE | Maximal zulässige Gültigkeitsdauer des Zugriffstokens in Sekunden |
 | MAX_CACHE_TIME | Maximaler Zeitrahmen in Sekunden in dem Bildressourcen in der App gecached werden |
 | DB_* | Konfiguration der Verbindung mit der Datenbank auf der auch die Daten der eTrax \| rescue Webapp gespeichert sind |
