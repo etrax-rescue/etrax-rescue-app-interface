@@ -95,7 +95,6 @@ function generateAndAssignToken(User $user)
   $token = base64_encode(random_bytes(48)); // -> 64 characters
   $user->token = hash('sha256', $token);
   $user->token_expiration_date = \Carbon\Carbon::now()->addSeconds(env('TOKEN_MAX_AGE'));
-  //$user->aktiveEID = null;
   $user->save();
   return $token;
 }
@@ -169,7 +168,6 @@ $router->group(['middleware' => 'auth'], function () use ($router) {
 
     $user->token = null;
     $user->token_expiration_date = null;
-    $user->aktiveEID = null;
     $user->save();
     return 'ok';
   });
